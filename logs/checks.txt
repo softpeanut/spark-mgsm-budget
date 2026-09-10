@@ -1,0 +1,6 @@
+Observed local validation:
+2026-09-10 09:52 UTC: python -m unittest -v test_evaluate.py: 6 tests passed.
+2026-09-10 10:02 UTC: analysis rejected partial 44/96 run, wrote no summary; OS evaluation lock confirmed held.
+2026-09-10 10:11 UTC: python -m pip check: No broken requirements found.
+2026-09-10 10:14 UTC: python analyze.py: exit 0; all 96 planned records passed identity, output-hash, score, terminal-state and token-count checks.
+Original tool output is retained in local execution evidence; this file is a concise transcription of those observed results.

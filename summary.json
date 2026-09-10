@@ -1,0 +1,397 @@
+{
+  "manifest_sha256": "3cb696d5ea0fca5fe570ad31039cf830859e2b08be0152308440924afa2023fe",
+  "n_problems": 24,
+  "n_completions": 96,
+  "groups": {
+    "en-off": {
+      "n": 24,
+      "correct": 18,
+      "delivered_integer": 21,
+      "length_stops": 2,
+      "status_counts": {
+        "correct": 18,
+        "missing_or_malformed_final": 3,
+        "wrong_integer": 3
+      },
+      "mean_generated_tokens": 285.0833333333333,
+      "median_generated_tokens": 225.5,
+      "mean_elapsed_seconds": 7.998654050364469,
+      "median_elapsed_seconds": 6.352388854022138,
+      "median_generation_tps": 37.23550283035751
+    },
+    "en-on": {
+      "n": 24,
+      "correct": 20,
+      "delivered_integer": 20,
+      "length_stops": 4,
+      "status_counts": {
+        "correct": 20,
+        "unfinished_or_invalid_thinking": 4
+      },
+      "mean_generated_tokens": 557.5416666666666,
+      "median_generated_tokens": 471.0,
+      "mean_elapsed_seconds": 15.414754467104407,
+      "median_elapsed_seconds": 13.078124374966137,
+      "median_generation_tps": 36.92998236185205
+    },
+    "zh-off": {
+      "n": 24,
+      "correct": 19,
+      "delivered_integer": 22,
+      "length_stops": 2,
+      "status_counts": {
+        "wrong_integer": 3,
+        "correct": 19,
+        "missing_or_malformed_final": 2
+      },
+      "mean_generated_tokens": 352.375,
+      "median_generated_tokens": 255.0,
+      "mean_elapsed_seconds": 9.815149256940154,
+      "median_elapsed_seconds": 7.118870979407802,
+      "median_generation_tps": 37.13775642867729
+    },
+    "zh-on": {
+      "n": 24,
+      "correct": 16,
+      "delivered_integer": 17,
+      "length_stops": 7,
+      "status_counts": {
+        "correct": 16,
+        "missing_or_malformed_final": 1,
+        "unfinished_or_invalid_thinking": 6,
+        "wrong_integer": 1
+      },
+      "mean_generated_tokens": 659.7083333333334,
+      "median_generated_tokens": 637.5,
+      "mean_elapsed_seconds": 18.304647168406518,
+      "median_elapsed_seconds": 17.61281941703055,
+      "median_generation_tps": 36.80421313923017
+    }
+  },
+  "paired": {
+    "en-off_vs_en-on": {
+      "a": "en-off",
+      "b": "en-on",
+      "counts": {
+        "both_correct": 17,
+        "only_a": 1,
+        "neither": 3,
+        "only_b": 3
+      },
+      "discordant_rows": [
+        {
+          "row": 41,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 173,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 177,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 224,
+          "a_correct": false,
+          "b_correct": true
+        }
+      ]
+    },
+    "zh-off_vs_zh-on": {
+      "a": "zh-off",
+      "b": "zh-on",
+      "counts": {
+        "only_b": 2,
+        "only_a": 5,
+        "both_correct": 14,
+        "neither": 3
+      },
+      "discordant_rows": [
+        {
+          "row": 3,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 19,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 41,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 47,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 65,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 177,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 183,
+          "a_correct": true,
+          "b_correct": false
+        }
+      ]
+    },
+    "en-off_vs_zh-off": {
+      "a": "en-off",
+      "b": "zh-off",
+      "counts": {
+        "only_a": 3,
+        "both_correct": 15,
+        "neither": 2,
+        "only_b": 4
+      },
+      "discordant_rows": [
+        {
+          "row": 3,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 64,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 65,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 101,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 173,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 177,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 224,
+          "a_correct": false,
+          "b_correct": true
+        }
+      ]
+    },
+    "en-on_vs_zh-on": {
+      "a": "en-on",
+      "b": "zh-on",
+      "counts": {
+        "both_correct": 15,
+        "only_a": 5,
+        "neither": 3,
+        "only_b": 1
+      },
+      "discordant_rows": [
+        {
+          "row": 19,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 47,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 64,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 101,
+          "a_correct": false,
+          "b_correct": true
+        },
+        {
+          "row": 177,
+          "a_correct": true,
+          "b_correct": false
+        },
+        {
+          "row": 183,
+          "a_correct": true,
+          "b_correct": false
+        }
+      ]
+    }
+  },
+  "audit_case_ids": [
+    "003-en-off",
+    "019-en-off",
+    "023-en-off",
+    "093-en-off",
+    "101-en-off",
+    "173-en-off",
+    "003-en-on",
+    "019-en-on",
+    "023-en-on",
+    "041-en-on",
+    "093-en-on",
+    "101-en-on",
+    "019-zh-off",
+    "023-zh-off",
+    "030-zh-off",
+    "003-zh-off",
+    "064-zh-off",
+    "065-zh-off",
+    "003-zh-on",
+    "023-zh-on",
+    "030-zh-on",
+    "019-zh-on",
+    "041-zh-on",
+    "047-zh-on"
+  ],
+  "reference_ambiguity_sensitivity": {
+    "excluded_rows": [
+      93,
+      177,
+      241
+    ],
+    "scope": "Secondary descriptive calculation based on the all-question reference audit; primary 24-row scores are unchanged.",
+    "groups": {
+      "en-off": {
+        "n": 21,
+        "correct": 18
+      },
+      "en-on": {
+        "n": 21,
+        "correct": 19
+      },
+      "zh-off": {
+        "n": 21,
+        "correct": 18
+      },
+      "zh-on": {
+        "n": 21,
+        "correct": 16
+      }
+    }
+  },
+  "first_started_at": "2026-09-10T09:53:37.024713+00:00",
+  "last_finished_at": "2026-09-10T10:14:14.287127+00:00",
+  "sum_inference_seconds": 1236.7969186275732,
+  "total_generated_tokens": 44513,
+  "process_peak_memory_gb": 3.65194727,
+  "failed_attempt_count": 0,
+  "raw_result_sha256": {
+    "003-en-off": "fb254253385b5344942fc61309e01d9f9388a360dbb9dc34ce11cae434bbb9b2",
+    "003-en-on": "e0bae942bc619c858d60674057ff7e04e07aadf454ea4f9d17192a1afc038b3a",
+    "003-zh-off": "8df062d4cebe8001c41646a8d170575d56aff9d519421d77eefe57daef0fa780",
+    "003-zh-on": "ed5de98b6e3f8637f89d5f49d9fe76435ad0958393c15f42cfc064026b5d41dd",
+    "019-en-off": "76acc755eb3dfc7f7b5d8bfb9ca0c1608fadb60c87c7fc46db9d8a04d4212421",
+    "019-en-on": "65cf366ac734b3a3604cffc6b8217a0d703a35a2338bd45716a9b6ee799a50fc",
+    "019-zh-off": "b41e0c00a86ed201e23431afe2aedae4d2de3d69dd0929537d744e25e65fb40e",
+    "019-zh-on": "86922b557b1ec15604eca44ba5408fd134285e02ac20162f35b9069e8df062e3",
+    "023-en-off": "c36092ba44b0c2c57e92c56452e11fd5117a2434c8334a0f56b44b2fc8546d74",
+    "023-en-on": "bfa734bf6d20d6dcb8d3a90aa6443961e6b1f7deb1adc4f4660052633ee998d5",
+    "023-zh-off": "c77c4708ad59317e0e7866186624030f92062d89690b8f4e589cb951798b396a",
+    "023-zh-on": "fc1c4119d1a3530ee09ed2360af75cdb2cddd8dc45ecaec84cb4e97090d8cc78",
+    "030-en-off": "e1cc959947c1da15bef72d8cb36102fc8827047e9430819448ca84ef8873d315",
+    "030-en-on": "9f2b16968074afaa7fee646f0c4ee34598e7852209f1ce794af6ec74ccd3460b",
+    "030-zh-off": "b9fd91ff3c487f5838811a100aab5f3015283f5684a472108cf4f9d1f7d78de7",
+    "030-zh-on": "31a2c7c6887584678690aae62656d6bc972526f1674133a4c2fb07898bb9cb24",
+    "033-en-off": "3d50417097df2e443457b06f6be147f8a5b178b2e4c0a7c9a7f6857883cc70a6",
+    "033-en-on": "c71ac624128403c1ca6fd5811954c7428599f6af6edce056b4f63d08c679f35d",
+    "033-zh-off": "8de55608a2520a6a26522ff0391f8ff20e73f273d011fd6bfdfd37af6aa03f68",
+    "033-zh-on": "fcac78dc40026281a2f6ad33072bf1d48a6cc9d19f261b882367d03a481f294c",
+    "041-en-off": "abb5b40079415569c08d5f1fe8a943d60178635b6d7d782082478dad7b823f02",
+    "041-en-on": "05bb1d3baa2b029f976407d0efeac9eb58be77d1d213ecee08ab78476921eb33",
+    "041-zh-off": "01da121557dd554c4feffd96629de274ed2d14de34ebf48c22151c2718babbb7",
+    "041-zh-on": "53677baee2e122567f7b4c211f8669a90f7c6aec5a804e04bdc7938a8ad728c5",
+    "044-en-off": "0a37ff85e4dcdeba718de5e47d1ed4d36a1ca18f3e38fed84e8889c193f0ee1a",
+    "044-en-on": "9fdf3057c64ca5120bcd522c8974650b1cbd3b24963b73b77522fc17438b9d29",
+    "044-zh-off": "2ecfa0272634355df7f759f13aafa7d52208936a1a7b6bc729190224b7c81233",
+    "044-zh-on": "1cb1d3ba691236260002bb5243b541a44a30527c9d5a21081f43ead16987cae4",
+    "047-en-off": "ce4c2e370b4261841f8f3c7a410b6b5f74301cac27432c26c64da61293bdb3f4",
+    "047-en-on": "cf1d157c5d94cd0c7cbe4da51b8ea9ed96adc59c7b70303324b761e5fb7674a8",
+    "047-zh-off": "12378c448253346f78569313b869855fdefa4d795df6e2fa5d729c70cb4d2c07",
+    "047-zh-on": "40b3f424e6e60007adf476592a9e7b28431e089322b2250aa12226853cb76c3c",
+    "064-en-off": "b30d7769c32b855a6913686306eaa9ab8e70d5a6dac9b4abd709fafa92a3de9e",
+    "064-en-on": "2b2f6730efc4b9fe4afc60ce279d1bd0d73721e0e84df2029cdbe679452f1f57",
+    "064-zh-off": "d7703ea38181145ddbe4547e7417f36c384eadf40f089e52ee0d01111b6b2e56",
+    "064-zh-on": "81edd7336ef9e093639420278d5d505957d8e5d8e1eb4175a1b6713b4e3e5d61",
+    "065-en-off": "af61be9d86c961b6b9c7d4304af56e2988e29088bf3bc495e0f512834f2c67d9",
+    "065-en-on": "2f65df15d640be41b0f22f57018d8aa7aacd5af49706e13fe88a41fe7a1caa83",
+    "065-zh-off": "a5f057a080f985e356abb86c75d27e09493aa6499c5ad3b5683f9b2338302b04",
+    "065-zh-on": "99b668af672347817dacf2049862f72c4534987a0a79b5b6574d6c72f05981c3",
+    "088-en-off": "5ae22b18cc9f137577fb0c7e76a34ee4174defb6f1ea3bf243159b3cde4c7e00",
+    "088-en-on": "6b6afdada5b6a5e99df1735c555af9c314c60f80bf51897be332b8b3aba17052",
+    "088-zh-off": "8c3fe5b2caa72887398a421b24ca2295112c4c0aba03abdd81ec7923b9f69f8b",
+    "088-zh-on": "c7d9c8b011a4eac448b3199e9fdf2714d4b0ba5e8b6ca695a2d93fc6fe41a596",
+    "093-en-off": "812eb7445198c6647468ef6b71c54cc49223aa7446451f18aea172c31a127851",
+    "093-en-on": "d3e0906a68b9cdaecfdf38a0ada852488b0bc10143e2033fb2f4552f7c1d30de",
+    "093-zh-off": "a1c4f194ca4d63598b5e975414f63747d6916fc13530af15993cfc7a02c5e374",
+    "093-zh-on": "dec2d1ea4cd44b89c57281625d465ac8808aee78aaf368f44fe8eb0361ed3ebf",
+    "101-en-off": "83fe36417e8f9b24b2d6e881ddb59a907078275ec71e2436cbda46f11762801e",
+    "101-en-on": "6b96d20c3637de8b8d8e98618277405d8d5f1916388ea30fcd59f54e7bf2fee9",
+    "101-zh-off": "0ea20c6ca143f956ded64225d1c4362517aba8a78f5c13d7e30766fc7d67d6e7",
+    "101-zh-on": "2fd02635b1b09d9c758739260e6d6540c09a85a17667535b98c011887cb62710",
+    "137-en-off": "92f8bfb960ed003ee3aa24a3f607ac1edb74087140ad2d823bab128c8b3526e7",
+    "137-en-on": "7b468ae96d1736198cc89a4fec4965a993397c4997954b049933b99d8484029d",
+    "137-zh-off": "87450f8f85eaecd135fe51a0581491d413dccf03af40b4523d2243fbd1455266",
+    "137-zh-on": "13c46cb4f656b9544cccaa6ba7ea10da6ab8ba72b94df468d4133bf9a47c7aeb",
+    "145-en-off": "9e65196c69169b512ffcf546293f09725140c7c97619736432376cf5a3c6e456",
+    "145-en-on": "c5ca1a703666e65a84662634f6aabbc03c1a97656417204c1ba8c40a3ad46501",
+    "145-zh-off": "1f6bda3b8c68cc8923a3bd54d8e896ba242d78125e3bc94dbd21f58f8a115407",
+    "145-zh-on": "7c4f5b3cad11864edd126cea9890a890e8e15b118d402cd84b9b2d6880de6241",
+    "160-en-off": "822d9ed8c6adf70e061c164fca63ab95e3ce67866b887e25fb99842c179e0868",
+    "160-en-on": "2d772a14a4f2632fbe7cf9639f63de7e3a79d361f5613a04a1944554c7b9efa0",
+    "160-zh-off": "3eb2ddc2918bba389e86a1d9a9717b267a1faa4d9ad5a29cf3e7c5347c9a86f7",
+    "160-zh-on": "6d1b7d956a516d46a1d610b6d626f2e9aa524fe215aa52bcb3818a5fc79a4b00",
+    "173-en-off": "ad7f49bb4de3cf75516d9a8e372186dd2604b031d133737a13e9a27f690a00d9",
+    "173-en-on": "8ed62fa31342c9e8aa5a87a25417d543ea1973364a87b3eaa0c76401415544d6",
+    "173-zh-off": "627bfe48d3af7eac88233c7687ffb5824d20739aa67e6808bbb8b286bd9813eb",
+    "173-zh-on": "6525fa6884e09b27150c33b5bbf4c4f1c5e395513cb4f1ad101959a38f6d5185",
+    "177-en-off": "8a615f08c5da501ac6298dcc07aa18f813e4624a66203d748a6ddefee4a30213",
+    "177-en-on": "a861c1c34b2e8caefc682eae3581fd9b582fe288ee034795c4fadfcf65eb1cc4",
+    "177-zh-off": "e215be2c69a91db8eb19a5db5868fb028dc8b45dabfe1f2edb3178ed7211c84e",
+    "177-zh-on": "ca93df57a8852f89f06e1ffd9a26caf1eb6e889c361628b4e94ada29ae34f66f",
+    "183-en-off": "19083f61f1eb66c3cd88fa150b5cf635b6a9a4a6cafe2fb938585bb6ecfbcf43",
+    "183-en-on": "f2f64fb6c7e96b05e31278034195d35510e7340eb2094b628e188f92a5187b7c",
+    "183-zh-off": "0c29f26a3c66b572e9b82426e177c9cb0ebcada10cefe523ee963487e26a5485",
+    "183-zh-on": "d65e97dcd6e1006153ffacc8b5bd834657b37c5727ee4ce6093a84b98cf8b037",
+    "202-en-off": "9df9cb8f3f5241a102f06870547cc78fe36992a59f1c4e27418e77f43513468c",
+    "202-en-on": "aeafa1e4f8db5a197c19e9212e3fd6c277107cb01236f84dd8dbda4d73823cf4",
+    "202-zh-off": "14d0ede2d769ec1f0943bf1f9b531242406a90febb772373f1624119cd9a04f3",
+    "202-zh-on": "2d69027af6d1bc152cf38c73f1b7b19c263a5c73d49e27bd639f470e12e1837a",
+    "211-en-off": "33bcf9fc2f75939040dd3ed70aa18bc7eb2e3cca91ca099f01041574a3fa2991",
+    "211-en-on": "f8e0091b3fdd3dad450198b1d7ad0d6d4e91e8bf23cf54c792ea49660474e145",
+    "211-zh-off": "df9a82eae21b690591dd1cb70aed95350fe226cfdaea0c7a64eb0ba6dfc0cf11",
+    "211-zh-on": "0f92217ba6559543f9b508b1b8bb90470f617466facb7163a257dfda2b24b8ca",
+    "224-en-off": "d57aa8c3285f01705d01dd82e3ec92fffbafffe3713a44f5905fdadbeca67262",
+    "224-en-on": "9f9b072bfdfbad083a48d555497d4a52b1d6fc39afcaf659ccd70602f6a348dc",
+    "224-zh-off": "a656d20272c731cdc6fbdbbbccd31019a2dc12d360958ae42433e907f0c7ad0c",
+    "224-zh-on": "8dda5e0dc0e76d052e6f6c42b9b086deb36bf1bb0536eecd96eee649fd428cdc",
+    "225-en-off": "856ffb75186f739dd4a1e83e9e0c8c2fe174475f54d9bdde6a164caa63bea85c",
+    "225-en-on": "234c1453732c28a9d036b59ce05e885c2ae07b112795accb1d36934939705bb1",
+    "225-zh-off": "29d37acff902d0ab9eed31f2b074784b65e40f1ee42ac09b84f503c036231ada",
+    "225-zh-on": "5b06d2c251b645fe9c97dc8517d00a6e6cfa10e066506d4f04967ad69b3242ed",
+    "241-en-off": "0a870284cc82c40f5eab871d899b1d7394d7158a0c2535ad2b9e3b0928032a21",
+    "241-en-on": "30bd038014d233e9e4a22bb11b9e530aa7833cc5faffc88f91769fc27b23c3e0",
+    "241-zh-off": "8caa5fbe34aad0118cf549fbcc5e18527782a50f2cb44ab07b4d3f5c9d01586b",
+    "241-zh-on": "7259813943673faa5018425db1017f9705a119e0c512207692d45ac2bd5bc06c"
+  }
+}

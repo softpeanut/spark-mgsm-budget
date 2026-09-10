@@ -1,0 +1,8 @@
+The repository <MODEL_DIR> contains custom code which must be executed to correctly load the model. You can inspect the repository content at <MODEL_DIR> .
+ You can inspect the repository content at https://hf.co/<MODEL_DIR>.
+You can avoid this prompt in future by passing the argument `trust_remote_code=True`.
+
+Do you wish to run the custom code? [y/N] [transformers] You are using a model of type `spark2_5` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+{"event": "loaded", "at": "2026-09-10T09:52:37.756895+00:00", "load_seconds": 0.8383377499412745}
+{"event": "completed", "at": "2026-09-10T09:52:39.313610+00:00", "index": 1, "total": 1, "id": "pilot", "score": {"prediction": 323, "correct": true, "status": "correct"}, "metrics": {"prompt_tokens": 36, "prompt_tps": 96.9469454879458, "generation_tokens": 8, "generation_tps": 42.762044973125406, "peak_memory": 3.466737996, "finish_reason": "stop"}}
+{"event": "finished", "mode": "pilot", "at": "2026-09-10T09:52:39.314123+00:00", "cases": 1}

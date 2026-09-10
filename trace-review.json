@@ -1,0 +1,195 @@
+{
+  "annotator": "AI-assisted trace review with independent arithmetic checks; not a personal human-review attestation",
+  "at": "2026-09-10T10:15:20.957162+00:00",
+  "reviews": {
+    "003-en-off": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly multiplies 3 sprints per session by 3 sessions per week and 60 meters per sprint: 540.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "019-en-off": {
+      "classification": "correct_final_with_repaired_intermediate_error",
+      "observation": "Initially divides the entire 12-mile trail by the 2 hours already spent and incorrectly describes 6 mph as the average so far; only 6 miles have been covered. Later explicitly recovers total allowed time 12/4=3 hours and remaining speed 6/(3-2)=6. The final answer is correct, but the whole visible trace is not error-free.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "023-en-off": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes four hours of burning and 4*2=8 cm of shortening.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "003-zh-off": {
+      "classification": "dropped_multiplicative_factor",
+      "observation": "Drops the three sprints per session and computes only 3*60=180 instead of 3*3*60=540.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "047-zh-on": {
+      "classification": "missing_part_of_requested_total",
+      "observation": "Computes five blue ties, ten red ties and the $60 red-tie price correctly, then returns $600 for red ties alone. It omits the already stated $200 spent on blue ties; requested total is $800. The same omission appears in thinking and the delivered explanation.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "019-zh-on": {
+      "classification": "correct_reasoning_but_delivery_truncated",
+      "observation": "Inside thinking, correctly solves 12/(2+t)=4, t=1 and remaining speed 6. It closes thinking and begins repeating the explanation, but reaches 1024 tokens before the visible FINAL line. The primary score is a delivery failure, not evidence of a mathematical inability on this case.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "093-zh-on": {
+      "classification": "reference_ambiguity_and_unfinished_thinking",
+      "observation": "Identifies the literal speed-time relation 40/1.1=400/11 and the conflict with the required integer. It also transiently says a 10% speed increase reduces time 10%, then corrects that to about 9.09%. Generation ends inside thinking at the budget. Reference 36 reflects a 10% time reduction, so this should not be presented as a clean mathematical error against an unambiguous label.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "101-en-off": {
+      "classification": "unit_confusion_and_truncation",
+      "observation": "Mistakes the 15 pages already read for 15 days, uses 15+4=19 days and 39/19, then repeats deliberation about an integer answer until truncation. Correct remaining average is (39-15)/4=6 pages/day.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "241-en-off": {
+      "classification": "counting_error_and_reference_ambiguity",
+      "observation": "Considers distinct books versus total reading events. It also incorrectly counts three named books as four, later corrects the distinct-book count to three, and ends before a final answer. The reference counts six reading events; the ambiguity does not excuse the temporary 3-as-4 error.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "019-en-on": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes 6 miles remaining, total allowed time 12/4=3 hours, one remaining hour, and 6 mph in both thinking and delivered explanation.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "003-zh-on": {
+      "classification": "sound_reasoning",
+      "observation": "Preserves both factors of three and computes 3*3*60=540 in both thinking and delivered explanation.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "019-zh-off": {
+      "classification": "correct_final_with_false_intermediate_rate_claim",
+      "observation": "The final equation 12/(2+t)=4 and speed 6/t=6 are correct. Earlier, however, it explicitly claims that the first 6 miles in 2 hours average 6 mph, whereas that rate is 3 mph. It also labels 12/2 as the elapsed-route average. The incorrect intermediate claim is not explicitly retracted, so a correct final answer does not establish a fully sound explanation.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "023-zh-off": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes four hours of burning and 2*4=8 cm of shortening.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "093-en-on": {
+      "classification": "reference_ambiguity_and_inconsistent_wording",
+      "observation": "Correctly derives original time 40 seconds and literal new time 400/11, but repeatedly describes a 10% speed increase as a 10% time decrease despite using division by 1.1. It gets stuck on the integer-output conflict and ends inside thinking. The dataset label 36 uses a different interpretation; both the reference ambiguity and the trace inconsistency are disclosed.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "030-zh-off": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly solves 18x=162, x=9, Allen age 11x=99, then 99+10=109.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "047-en-off": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes five blue ties, ten red ties, red unit price $60 and total $600+$200=$800. Retained as an additional paired illustration of the Chinese thinking-on omission.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "177-en-off": {
+      "classification": "arithmetic_sum_error",
+      "observation": "Rent 1500, fuel 2000, donation 1250, daughter 200 and household 700 are each derived correctly, but their sum is incorrectly reported as 6750 instead of 5650. That arithmetic error causes FINAL -750 rather than 350. It does not result from interpreting the weekly allowance differently.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "177-zh-off": {
+      "classification": "sound_under_reference_interpretation",
+      "observation": "Correctly adds 1500+2000+1250+200+700=5650 and subtracts from 6000 to get 350, taking the daughter allowance once as the reference does. Retained as an additional paired illustration; the question period caveat remains.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "041-en-on": {
+      "classification": "spatial_relationship_confusion_and_truncation",
+      "observation": "Computes gemstone range 1200 feet correctly, then repeatedly treats the dragon flame range of 1000 feet as a limit on whether the javelin can hit. It fails to take the range difference 1200-1000=200 and ends inside thinking.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "101-en-on": {
+      "classification": "mismatched_rate_period_and_truncation",
+      "observation": "Considers 39/5 and later 24/5, mixing the total or remaining pages with a five-day period including Monday. It never delivers the required remaining rate (39-15)/4=6 before the thinking budget ends.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "173-en-off": {
+      "classification": "missing_time_conversion",
+      "observation": "Correctly obtains the $1500 monthly payment, but labels it yearly and omits multiplication by 12, returning 1500 instead of 18000.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "064-zh-off": {
+      "classification": "wrong_requested_quantity",
+      "observation": "Computes 25 miles/gallon correctly, but answers for the 8 gallons remaining before refill instead of the stated 12-gallon full tank: 200 rather than 300.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "065-zh-off": {
+      "classification": "dropped_repetition_factor",
+      "observation": "Multiplies television time by three weekly sessions but treats the one hour of reading as once per week, yielding (6+1)*4=28 instead of (2+1)*3*4=36.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "064-zh-on": {
+      "classification": "translation_interpretation_loop_and_truncation",
+      "observation": "Interprets the Chinese phrase 一罐汽油 as an unspecified canister rather than a full car tank, repeatedly speculating about canister capacity until the budget ends. The English single-tank wording is clearer. This is an observed translation/prompt confound, not evidence of an intrinsic language deficit.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "023-zh-on": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes four hours times two centimeters per hour in thinking and delivers FINAL 8.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "003-en-on": {
+      "classification": "correct_final_with_mislabeled_unit",
+      "observation": "The initial thinking correctly derives nine sprints per week. The rewritten thinking and visible explanation then call the three sprints a per-week quantity while multiplying by three times per week; that label should be per session. Numerical factors and final 540 are correct, but the final explanation has a unit-label error.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "093-en-off": {
+      "classification": "reversed_time_difference_and_malformed_integer",
+      "observation": "Reverses the faster-runner relation, using G+2=38 to obtain Gerald original time 36 instead of 40, then reduces time by 10% to get 32.4. It emits FINAL: 32.4 and stops; the frozen integer parser rejects it. The reversed relation is a real error under either interpretation of the speed-improvement wording.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "093-zh-off": {
+      "classification": "distance_time_confusion_and_truncation",
+      "observation": "Treats the 400-meter distance as an initial 400-second time, gets 402 seconds, and uses seconds-per-meter as though it were speed. It then struggles with division until the length limit. These errors are distinct from the dataset speed/time ambiguity.",
+      "full_trace_read": true,
+      "selection": "additional_exploratory"
+    },
+    "023-en-on": {
+      "classification": "sound_reasoning",
+      "observation": "Correctly computes the four-hour interval and 2*4=8 cm in both thinking and the delivered explanation.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "030-zh-on": {
+      "classification": "sound_reasoning_with_translation_deliberation",
+      "observation": "Notices the mixed Chinese/English rendering of Allen, then uses the context to map it to the 11-part age, solves 18x=162, and returns 11*9+10=109. The extra name deliberation does not introduce a mathematical error.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    },
+    "041-zh-on": {
+      "classification": "spatial_relationship_confusion_and_repetition",
+      "observation": "Computes 1200 feet but conflates the dragon flame range with whether the javelin hits, then repeats the interpretation question until the thinking budget ends. It never delivers the range difference 1200-1000=200.",
+      "full_trace_read": true,
+      "selection": "prespecified"
+    }
+  },
+  "prespecified_review_count": 24,
+  "additional_review_count": 7,
+  "complete_prespecified_audit": true
+}
