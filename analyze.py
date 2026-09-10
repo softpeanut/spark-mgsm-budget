@@ -7,7 +7,7 @@ import statistics
 from evaluate import ROOT, digest, file_digest, validate_completed, write_json
 
 
-def summarize():
+def summarize() -> None:
     plan = json.loads((ROOT / "plan.json").read_text())
     manifest = json.loads((ROOT / "manifest.json").read_text())
     if manifest["runner_sha256"] != file_digest(ROOT / "evaluate.py"):
@@ -30,6 +30,7 @@ def summarize():
             raise ValueError("Prompt token count mismatch")
         records[case["id"]] = record
     groups = {}
+    sensitivity = {}
     audit = []
     for language in ("en", "zh"):
         for thinking in (False, True):
@@ -49,6 +50,11 @@ def summarize():
                 "median_elapsed_seconds": statistics.median(r["elapsed_seconds"] for r in group),
                 "median_generation_tps": statistics.median(r["metrics"]["generation_tps"] for r in group),
             }
+            unambiguous = [r for r in group if r["case"]["row"] not in (93, 177, 241)]
+            sensitivity[label] = {
+                "n": len(unambiguous),
+                "correct": sum(r["score"]["correct"] for r in unambiguous),
+            }
             for correct in (True, False):
                 candidates = [r for r in group if r["score"]["correct"] == correct]
                 audit.extend(r["case"]["id"] for r in candidates[:3])
@@ -67,6 +73,11 @@ def summarize():
     result = {
         "manifest_sha256": digest(manifest), "n_problems": 24, "n_completions": 96,
         "groups": groups, "paired": paired, "audit_case_ids": audit,
+        "reference_ambiguity_sensitivity": {
+            "excluded_rows": [93, 177, 241],
+            "scope": "Secondary descriptive calculation based on the all-question reference audit; primary 24-row scores are unchanged.",
+            "groups": sensitivity,
+        },
         "first_started_at": min(r["started_at"] for r in records.values()),
         "last_finished_at": max(r["finished_at"] for r in records.values()),
         "sum_inference_seconds": sum(r["elapsed_seconds"] for r in records.values()),
