@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-10T10:04:55.038318+00:00",
+  "model_revision_returned": "448e61eb392c00f2c403185c5b56d5e0665bfaab",
+  "dataset_revision_returned": "b2f13d426afe3be8d69a7e739b36724db8b66bbc",
+  "checks": [
+    {
+      "file": "model-00001-of-00002.safetensors",
+      "remote_lfs_sha256": "b1629719b3f6de5de922abb3c90e45927550dd6f790f43030dc812cafce1af87",
+      "local_sha256": "b1629719b3f6de5de922abb3c90e45927550dd6f790f43030dc812cafce1af87",
+      "matches": true
+    },
+    {
+      "file": "model-00002-of-00002.safetensors",
+      "remote_lfs_sha256": "3537675bfb657cb6d1f70bb1fab9b83fcb79ce5693f2557992548eb6d2bf13a0",
+      "local_sha256": "3537675bfb657cb6d1f70bb1fab9b83fcb79ce5693f2557992548eb6d2bf13a0",
+      "matches": true
+    },
+    {
+      "file": "tokenizer.json",
+      "remote_lfs_sha256": "710cce15cf3565674c499f9413997c6e8101f2bdd96245cff8f0311fb501248c",
+      "local_sha256": "710cce15cf3565674c499f9413997c6e8101f2bdd96245cff8f0311fb501248c",
+      "matches": true
+    },
+    {
+      "file": "en/test-00000-of-00001.parquet",
+      "remote_lfs_sha256": "3d0e84285dfb00d40e73d264628b0b0c65ca42e7112ff115b65787b20e1214dd",
+      "local_sha256": "3d0e84285dfb00d40e73d264628b0b0c65ca42e7112ff115b65787b20e1214dd",
+      "matches": true
+    },
+    {
+      "file": "zh/test-00000-of-00001.parquet",
+      "remote_lfs_sha256": "3d5bab964d0991527391ddcb1862f587cc9baf918ba682e6faa080ff87b95bdf",
+      "local_sha256": "3d5bab964d0991527391ddcb1862f587cc9baf918ba682e6faa080ff87b95bdf",
+      "matches": true
+    }
+  ]
+}
