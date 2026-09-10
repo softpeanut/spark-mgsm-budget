@@ -67,8 +67,10 @@ performance benchmark. Greedy decoding alone does not prove bitwise reproducibil
 on another device, library version, or kernel implementation.
 
 During tokenizer loading, Transformers printed a custom-AutoConfig prompt and a
-fallback configuration warning. Standard input was closed; no remote Python was
-approved or downloaded. Spark's official MLX class loaded the original weights
+fallback configuration warning. Standard input was closed; no Hugging Face
+checkpoint-specific Python was executed. The model snapshot excludes `.py` files;
+upstream source was separately fetched for inspection. Spark's official MLX class
+loaded the original weights
 with strict validation. The full sanitized warnings are retained in the logs.
 
 The extraction rule is frozen in `score_output`: NFKC normalization, completed

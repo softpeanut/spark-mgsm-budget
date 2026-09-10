@@ -100,8 +100,9 @@ SHA256 metadata at the pinned revisions. Model weights are **not** redistributed
 
 The official loader passed strict weight loading and finite-logit/actual generation
 checks. Transformers emitted a tokenizer AutoConfig fallback warning and a
-custom-code prompt; stdin was closed and no remote Python was downloaded or
-approved. The original warning remains in [pilot logs](logs/pilot.log) and
+custom-code prompt; stdin was closed and no Hugging Face checkpoint-specific
+Python was executed. The model snapshot excludes `.py` files; upstream Python
+source was separately fetched for inspection. The original warning remains in [pilot logs](logs/pilot.log) and
 [complete run logs](logs/run.log), with only the private model path replaced by
 `<MODEL_DIR>`. Numerical parity against Transformers inference was not tested.
 
