@@ -1,0 +1,9 @@
+.venv/
+runtime/
+data/*.parquet
+model-cache/
+replay/
+__pycache__/
+.run.lock
+*.tmp
+.DS_Store

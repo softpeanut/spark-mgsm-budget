@@ -1,0 +1,84 @@
+{
+  "case": {
+    "id": "pilot",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Compute 17 times 19. End with the exact line FINAL: <integer>."
+      }
+    ],
+    "thinking": false,
+    "expected": 323
+  },
+  "manifest_sha256": "3cb696d5ea0fca5fe570ad31039cf830859e2b08be0152308440924afa2023fe",
+  "max_tokens": 128,
+  "load_seconds_this_process": 0.8383377499412745,
+  "finite_prefill_verified": true,
+  "rendered_prompt": "<｜start▁of▁sentence｜><|System|>\nyou are a helpful assistant.<｜end▁of▁sentence｜><｜start▁of▁sentence｜><|User|>Compute 17 times 19. End with the exact line FINAL: <integer>.<｜end▁of▁sentence｜><｜start▁of▁sentence｜><|Bot|></think>",
+  "prompt_token_ids": [
+    0,
+    130972,
+    198,
+    18178,
+    599,
+    259,
+    18639,
+    31627,
+    27,
+    1,
+    0,
+    130973,
+    67963,
+    220,
+    30,
+    36,
+    4803,
+    220,
+    30,
+    38,
+    27,
+    13549,
+    478,
+    275,
+    8013,
+    3396,
+    78267,
+    3126,
+    39,
+    1036,
+    88139,
+    57198,
+    1,
+    0,
+    130976,
+    4
+  ],
+  "output": "FINAL: 323",
+  "output_token_ids": [
+    55691,
+    3126,
+    39,
+    220,
+    32,
+    31,
+    32,
+    1
+  ],
+  "started_at": "2026-09-10T09:52:38.680246+00:00",
+  "finished_at": "2026-09-10T09:52:39.312763+00:00",
+  "elapsed_seconds": 0.6325178749393672,
+  "output_sha256": "0c9866eae8f3022a02c267de6c50de3d2520e4392a3e680e9c869965ce3a574a",
+  "metrics": {
+    "prompt_tokens": 36,
+    "prompt_tps": 96.9469454879458,
+    "generation_tokens": 8,
+    "generation_tps": 42.762044973125406,
+    "peak_memory": 3.466737996,
+    "finish_reason": "stop"
+  },
+  "score": {
+    "prediction": 323,
+    "correct": true,
+    "status": "correct"
+  }
+}

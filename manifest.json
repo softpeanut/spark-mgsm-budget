@@ -1,0 +1,102 @@
+{
+  "plan_sha256": "7446587b3caca909633db7d985eeda40091ab941a13684091d39c3d205652f25",
+  "runner_sha256": "9849232e082b327d6ec191c95d749a6c495eebf057ab9874c14191141795e107",
+  "model_files": {
+    "LICENSE": {
+      "sha256": "525c465ab952779d2d360a9ff36f7f49ae018a23d80302ff839a850a77784c36",
+      "bytes": 11338
+    },
+    "chat_template.jinja": {
+      "sha256": "705345721970da40e6aa56db548a46ecd1d8d94a5418808fa180ac19ee77a9ba",
+      "bytes": 4648
+    },
+    "config.json": {
+      "sha256": "16aa5d3619d0d893e7157f2499675430844eb7b383c80ecc1b3e8e8928a75d52",
+      "bytes": 1838
+    },
+    "generation_config.json": {
+      "sha256": "804a5276a9d237600688267dd2bf6f9d4129ec21faf417f870d5d52b32ad9e6c",
+      "bytes": 281
+    },
+    "merges.txt": {
+      "sha256": "b06fc88940ae6a20f71142f06304c12547f58ab52c175e56af12a38c3dc62f36",
+      "bytes": 1567883
+    },
+    "model-00001-of-00002.safetensors": {
+      "sha256": "b1629719b3f6de5de922abb3c90e45927550dd6f790f43030dc812cafce1af87",
+      "bytes": 1997108320
+    },
+    "model-00002-of-00002.safetensors": {
+      "sha256": "3537675bfb657cb6d1f70bb1fab9b83fcb79ce5693f2557992548eb6d2bf13a0",
+      "bytes": 1418232176
+    },
+    "model.safetensors.index.json": {
+      "sha256": "cc2b212985f5d0469bf926903e4bd7ee81856687baa0c6c6b55ff200d4cdc63f",
+      "bytes": 18805
+    },
+    "special_tokens_map.json": {
+      "sha256": "48a257e3f5f20a004e7c30482a70ae19ae7d9cf713144f2a1394ba20af8c3cb5",
+      "bytes": 156
+    },
+    "tokenizer.json": {
+      "sha256": "710cce15cf3565674c499f9413997c6e8101f2bdd96245cff8f0311fb501248c",
+      "bytes": 10115786
+    },
+    "tokenizer_config.json": {
+      "sha256": "0729b0aeb1b88e000687b51c72d5aece759233bb4f6fb353eb497676e04d43b0",
+      "bytes": 4797
+    },
+    "vocab.json": {
+      "sha256": "9f42cb7e7af5afe27cae2337d272d60b5659e10143ef4bb952f642b847916fe1",
+      "bytes": 3032795
+    }
+  },
+  "packages": {
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.3",
+    "PyYAML": "6.0.3",
+    "Pygments": "2.21.0",
+    "annotated-doc": "0.0.5",
+    "anyio": "4.15.1",
+    "certifi": "2026.7.22",
+    "click": "8.5.0",
+    "filelock": "3.32.6",
+    "fsspec": "2026.7.0",
+    "h11": "0.16.0",
+    "hf-xet": "1.6.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "huggingface_hub": "1.30.0",
+    "idna": "3.19",
+    "markdown-it-py": "4.2.0",
+    "mdurl": "0.1.2",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "mlx-metal": "0.32.2",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "pip": "25.3",
+    "protobuf": "7.36.1",
+    "pyarrow": "25.0.1",
+    "regex": "2026.9.10",
+    "rich": "15.0.0",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "shellingham": "1.5.4",
+    "spark-mlx-llm": "0.1.0",
+    "tokenizers": "0.23.2",
+    "tqdm": "4.70.0",
+    "transformers": "5.17.0",
+    "typer": "0.27.2",
+    "typing_extensions": "4.16.0"
+  },
+  "runtime_revision": "de2b4379fa1e2f2e1f99d84c83f0e008f651d86c",
+  "python": "3.13.9",
+  "macos": "26.6.2",
+  "machine": "arm64",
+  "device": "mlx.gpu",
+  "dtype": "bfloat16",
+  "chip": "Apple M3 Pro",
+  "memory_bytes": 38654705664,
+  "no_quantization": true
+}

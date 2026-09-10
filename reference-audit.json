@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-09-10T10:01:03.041449+00:00",
+  "scope": "All 24 selected English questions; reference-compatible calculations independently recomputed with exact Python Fraction arithmetic. This is AI-assisted analysis, not a human-review attestation. Chinese wording is reviewed separately when comparing traces.",
+  "primary_scores_changed": false,
+  "records": [
+    {
+      "row": 3,
+      "reference": 540,
+      "reference_compatible_derivation": "3 sprints/session x 3 sessions/week x 60 m/sprint",
+      "computed_exact": "540",
+      "caveat": ""
+    },
+    {
+      "row": 19,
+      "reference": 6,
+      "reference_compatible_derivation": "12/4 = 3 hours allowed; (12-4-2)/(3-1-1)",
+      "computed_exact": "6",
+      "caveat": ""
+    },
+    {
+      "row": 23,
+      "reference": 8,
+      "reference_compatible_derivation": "(17-13) hours x 2 cm/hour",
+      "computed_exact": "8",
+      "caveat": ""
+    },
+    {
+      "row": 30,
+      "reference": 109,
+      "reference_compatible_derivation": "162 x 11/(7+11) + 10",
+      "computed_exact": "109",
+      "caveat": ""
+    },
+    {
+      "row": 33,
+      "reference": 70,
+      "reference_compatible_derivation": "(110+30)/2",
+      "computed_exact": "70",
+      "caveat": ""
+    },
+    {
+      "row": 41,
+      "reference": 200,
+      "reference_compatible_derivation": "400 x 3 - 1000",
+      "computed_exact": "200",
+      "caveat": ""
+    },
+    {
+      "row": 44,
+      "reference": 20,
+      "reference_compatible_derivation": "20 x 2 - (20/10) x 10",
+      "computed_exact": "20",
+      "caveat": ""
+    },
+    {
+      "row": 47,
+      "reference": 800,
+      "reference_compatible_derivation": "200 + (200/40) x 2 x (40 x 1.5)",
+      "computed_exact": "800",
+      "caveat": ""
+    },
+    {
+      "row": 64,
+      "reference": 300,
+      "reference_compatible_derivation": "(100/4) x 12",
+      "computed_exact": "300",
+      "caveat": ""
+    },
+    {
+      "row": 65,
+      "reference": 36,
+      "reference_compatible_derivation": "(2+2/2) x 3 x 4",
+      "computed_exact": "36",
+      "caveat": ""
+    },
+    {
+      "row": 88,
+      "reference": 8000,
+      "reference_compatible_derivation": "88000/(10+1)",
+      "computed_exact": "8000",
+      "caveat": ""
+    },
+    {
+      "row": 93,
+      "reference": 36,
+      "reference_compatible_derivation": "Reference-compatible time reduction: (38+2) x 0.9",
+      "computed_exact": "36",
+      "caveat": "The English wording says speed improves by 10%. For a fixed distance, a literal 10% speed increase gives 40/1.1 = 400/11 seconds, not 36. The reference instead treats this as a 10% reduction in elapsed time. Preserve the official reference for the primary score and flag this ambiguity; do not label disagreement as an unequivocal reasoning error."
+    },
+    {
+      "row": 101,
+      "reference": 6,
+      "reference_compatible_derivation": "(4+20+7+8-15)/4",
+      "computed_exact": "6",
+      "caveat": ""
+    },
+    {
+      "row": 137,
+      "reference": 29,
+      "reference_compatible_derivation": "(2 x 7.5 + 2 x 1.5 + 2 x 1) x 1.2 + 5",
+      "computed_exact": "29",
+      "caveat": ""
+    },
+    {
+      "row": 145,
+      "reference": 4000,
+      "reference_compatible_derivation": "10 x 100 x (12/3)",
+      "computed_exact": "4000",
+      "caveat": ""
+    },
+    {
+      "row": 160,
+      "reference": 16,
+      "reference_compatible_derivation": "(17+7) x 2/3",
+      "computed_exact": "16",
+      "caveat": ""
+    },
+    {
+      "row": 173,
+      "reference": 18000,
+      "reference_compatible_derivation": "(300+200+500) x 1.5 x 12",
+      "computed_exact": "18000",
+      "caveat": ""
+    },
+    {
+      "row": 177,
+      "reference": 350,
+      "reference_compatible_derivation": "(6000-6000/4-6000/3)/2 - 200 - 700",
+      "computed_exact": "350",
+      "caveat": "The reference subtracts the stated $200 once. The wording describes that allowance as weekly and salary as monthly; no number of weekly transfers is specified. A full monthly-cashflow interpretation is underdetermined."
+    },
+    {
+      "row": 183,
+      "reference": 2,
+      "reference_compatible_derivation": "abs(4 x 55 - (60+57+54+51))",
+      "computed_exact": "2",
+      "caveat": ""
+    },
+    {
+      "row": 202,
+      "reference": 100,
+      "reference_compatible_derivation": "10 acres x 5 tons/acre x 2 barrels/ton",
+      "computed_exact": "100",
+      "caveat": ""
+    },
+    {
+      "row": 211,
+      "reference": 4,
+      "reference_compatible_derivation": "3r+5(r+2)=42 => r=(42-10)/8",
+      "computed_exact": "4",
+      "caveat": ""
+    },
+    {
+      "row": 224,
+      "reference": 180,
+      "reference_compatible_derivation": "30 x 3 + 18 x 5",
+      "computed_exact": "180",
+      "caveat": ""
+    },
+    {
+      "row": 225,
+      "reference": 9,
+      "reference_compatible_derivation": "6 + 6/2",
+      "computed_exact": "9",
+      "caveat": ""
+    },
+    {
+      "row": 241,
+      "reference": 6,
+      "reference_compatible_derivation": "(2+1) books x 2 readers",
+      "computed_exact": "6",
+      "caveat": "The reference counts reading events across readers (6), rather than distinct physical books (3)."
+    }
+  ]
+}
